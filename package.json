@@ -4,6 +4,7 @@
   "description": "RGPV result scraper web app with Express and EJS",
   "main": "app.js",
   "scripts": {
+    "postinstall": "puppeteer install",
     "start": "node app.js"
   },
   "keywords": [],
