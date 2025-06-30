@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result</title>
+</head>
+<body>
+  <% if (error) { %>
+    <h2 style="color:red;"><%= error %></h2>
+  <% } else { %>
+    <h2>Result for <%= data.roll %></h2>
+    <p>Name: <%= data.name %></p>
+    <p>SGPA: <%= data.sgpa %></p>
+    <p>CGPA: <%= data.cgpa %></p>
+    <a href="/download/<%= data.roll %>">Download JSON</a>
+  <% } %>
+  <br><a href="/">Back</a>
+</body>
+</html>
